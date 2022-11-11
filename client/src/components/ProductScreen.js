@@ -15,17 +15,17 @@ const ProductScreen = () => {
 		const fetchProduct = async () => {
 			try {
 				const { data } = await axios.get(`/api/products/${productId}`);
-				console.log("data", data);
+	
 				setProduct(data);
 			} catch (err) {
 				const { data } = err.response;
-				console.log(data.message);
+
 				setError(data.message);
 			}
 		};
 		fetchProduct();
 	}, []);
-	console.log("params", params);
+
 	return (
 		<>
 			<Link className='btn btn-light my-3' to='/'>

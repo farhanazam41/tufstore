@@ -9,7 +9,6 @@ const Rating = ({value, text, color}) => {
     const fourthStar = value >= 4 ? 'fas fa-star' : value >= 3.5 ? 'fas fa-star-half-alt' : 'far fa-star'
     const fifthStar = value >= 5 ? 'fas fa-star' : value >= 4.5 ? 'fas fa-star-half-alt' : 'far fa-star'
 
-    console.log('text', text);
 	return (
 		<div className='rating'>
 			<span>

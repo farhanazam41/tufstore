@@ -4,7 +4,7 @@ import Rating from "./Rating";
 import { Link } from "react-router-dom";
 
 const Product = ({ product }) => {
-	console.log("product", product);
+
 	const {
 		_id,
 		name,
@@ -17,8 +17,7 @@ const Product = ({ product }) => {
 		rating,
 		numReviews,
 	} = product;
-	console.log("product._id", _id);
-	console.log("numReviews", numReviews);
+
 	return (
 		<Card>
 			<Link to={`/product/${_id}`}>
